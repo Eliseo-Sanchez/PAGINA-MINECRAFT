@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/*-------- ENCABEZADO ----------*/
+
+.encabezado {
+	padding: 10px;
+	background: #232526;
+	text-align: center;
+}
+
+.encabezado img {
+	width: 400px;
+}
+
+.creadores {
+	text-align: center;
+}
+
+.boton {
+	width: 20%;
+	padding: 15px 0px;
+	margin: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background: green;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+	font-family: 'Playfair Display', serif;
+}
+
+.boton:hover {
+	background: #1F1C2C;
+	transform: scale(1.2);
+}
+
+
+/*------------------------------------------------------*/
+
+.fondo {
+	width: 60%;
+	margin: 10px;
+}
+
+.imgFondo {
+	background-image: url("/imagenes/index/cielo.webp");
+	text-align: center;
+}
+
+/*------------------------------------------------------*/
+
+.cerdobailando {
+	position: absolute;
+	top: 0px;
+	right: 30px;
+}
+
+.cerdobailando img {
+	width: 90px;
+}
+
+.ghast {
+	position: absolute;
+	top: 4px;
+	left: 30px
+}
+
+.ghast img {
+	width: 70px;
+}
+
+/*------------------------------------------------------*/
+
+ul img {
+	width: 100px;
+	margin: 35px;
+}
+
+ul p {
+	font-weight: bold;
+}
+
+.temas {
+	margin: 30px;
+  	display: inline-block;
+}
+
+.centrar {
+	text-align: center;
+}
+
+/* Estilos generales del contenedor */
+.contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 800px;
+}
+
+.imagen {
+    flex: 0 0 auto; /* La imagen no crecerá, se mantiene a la izquierda */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.imagen img {
+    max-width: 100%; /* La imagen se ajusta al ancho del contenedor */
+    height: auto;
+}
+
+/* Estilos para el contenido (texto) */
+.contenido {
+    flex: 1; /* El contenido ocupará el espacio restante */
+}
+
+.contenido h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+	font-family: 'Playfair Display', serif;
+}
+
+.contenido p {
+    font-size: 16px;
+    line-height: 1.5;
+	font-family: 'Playfair Display', serif;
+}
+
+.nolink {
+	text-decoration: none;
+	color: inherit;
+}
+
+.temas .tema {
+/*	display: inline-block;*/
+/*	text-align: center;*/
+	width: 900px;
+	/*vertical-align: top;*/
+	margin: 15px 0px;
+	padding: 20px 20px;
+	box-sizing: border-box;
+	border-color: #000000;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 20px;
+}
+
+.temas .tema:hover {
+	border-color: #C78C19;
+}
+
+.temas .tema:hover h2 {
+	font-size: 40px;
+}
+
+.tipo {
+	font-size: 30px;
+	font-weight: bold;
+}
