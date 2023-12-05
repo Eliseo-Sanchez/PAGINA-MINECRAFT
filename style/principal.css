@@ -39,17 +39,65 @@
 
 /*------------------------------------------------------*/
 
+.informacion {
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: #D3CCE3;
+    padding: 2rem;
+    border-radius: 1rem;
+	margin: 30px;
+}
+
+.backsitio {
+	background-image: url("../imagenes/index/cielo.webp");
+	background-size: cover;
+    
+}
+
+
 .fondo {
-	width: 60%;
-	margin: 10px;
+	width: 40%;
+	margin: 20px 40px;
 }
 
-.imgFondo {
-	background-image: url("/imagenes/index/cielo.webp");
+.textoinformacion h1{
+	font-size: 30px;
+	font-family: 'Playfair Display', serif;
+}
+
+.informacion {
+	display: flex;
+	align-items: center;
+  }
+  
+  .textoinformacion {
 	text-align: center;
+	flex: 1;
+	padding-left: 20px; /* Espacio entre la imagen y el texto */
+  }
+
+  .sitiooficial {
+	text-align: center;
+	padding: 30px;
+  }
+
+.botonsitio {
+	width: 20%;
+	padding: 15px 0px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background: green;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: 'Playfair Display', serif;
 }
 
-/*------------------------------------------------------*/
+.botonsitio:hover {
+	background: #1F1C2C;
+}
+
+  /*-------------------------------------*/
 
 .cerdobailando {
 	position: absolute;
@@ -143,6 +191,7 @@ ul p {
 	border-width: 2px;
 	border-style: solid;
 	border-radius: 20px;
+	background-color: aliceblue;
 }
 
 .temas .tema:hover {
@@ -156,4 +205,30 @@ ul p {
 .tipo {
 	font-size: 30px;
 	font-weight: bold;
+}
+
+main {
+	background-image: url("../imagenes/index/fondolargo.png");
+	background-size: cover;
+background-position: top;
+background-repeat: no-repeat;
+}
+
+/*------------------------------------*/
+
+footer {
+	background-image: url("../imagenes/index/fondofooter.webp");
+	background-size: cover;
+	text-align: center;
+	padding: 13px;
+}
+
+footer h1 {
+	text-align: center;
+	font-size: 20px;
+}
+
+footer img {
+	width: 100px;
+	padding: 20px;
 }
