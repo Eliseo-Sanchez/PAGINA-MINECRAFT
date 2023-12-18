@@ -12,8 +12,11 @@
 	width: 400px;
 }
 
+/*-------------- BOTON CREADORES -------------------*/
+
 .creadores {
 	text-align: center;
+	background: linear-gradient(#232526, #bdc3c7);
 }
 
 .boton {
@@ -37,7 +40,7 @@
 }
 
 
-/*------------------------------------------------------*/
+/*----------------SITIO OFICIAL----------------------*/
 
 .informacion {
     box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
@@ -53,7 +56,6 @@
     
 }
 
-
 .fondo {
 	width: 40%;
 	margin: 20px 40px;
@@ -67,18 +69,18 @@
 .informacion {
 	display: flex;
 	align-items: center;
-  }
+}
   
-  .textoinformacion {
+.textoinformacion {
 	text-align: center;
 	flex: 1;
 	padding-left: 20px; /* Espacio entre la imagen y el texto */
-  }
+}
 
-  .sitiooficial {
+.sitiooficial {
 	text-align: center;
 	padding: 30px;
-  }
+}
 
 .botonsitio {
 	width: 20%;
@@ -97,7 +99,70 @@
 	background: #1F1C2C;
 }
 
-  /*-------------------------------------*/
+/*-------------PAGINAS UTILES----------------*/
+
+.fondopaginasutiles {
+	background-image: url(../imagenes/index/fondovista.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.paginasutiles {
+	text-align: center;
+	/*box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: #3A6073;*/
+    padding: 2rem;
+    border-radius: 1rem;
+	margin: 30px;
+}
+  
+.botonpaginas {
+	display: inline-block;
+	width: 20%;
+	height: 280px;
+	vertical-align: top;
+	margin: 20px;
+	padding: 30px;
+	border-color: #000000;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 20px;
+	background-color: aliceblue;
+}
+
+.botonpaginas:hover {
+	border-color: green;
+	border-width: 3px;
+}
+
+.botonpaginas:hover h1 {
+	font-size: 30px;
+}
+
+.botonpaginas h1 {
+	padding: 0 0 10px 0;
+	font-weight: bold;
+	text-align: center;
+	font-size: 20px;
+	font-family: 'Playfair Display', serif;
+}
+
+.botonpaginas p {
+	margin: 25px 0 0 0;
+	font-weight: bold;
+	text-align: center;
+	font-size: 15px;
+	font-family: 'Playfair Display', serif;
+}
+  
+.botonpaginas img {
+	width: 150px;
+}
+  
+  
+
+/*-------------CERDO Y GHAST-----------------*/
 
 .cerdobailando {
 	position: absolute;
@@ -119,7 +184,89 @@
 	width: 70px;
 }
 
-/*------------------------------------------------------*/
+/*------------------- TEMAS -----------------------*/
+
+.contenedor-central {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contenidocomojugar {
+    width: 60%;
+    margin: 15px auto; /* Centra verticalmente y con márgenes automáticos horizontalmente */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+
+.contenidocomojugar:hover {
+	border-color: #C78C19;
+}
+
+.contenidocomojugar:hover h1{
+	font-size: 40px;
+}
+
+.fondo {
+	width: 40%;
+	margin: 20px 40px;
+}
+
+.infocomojugar h1{
+	font-size: 24px;
+	font-family: 'Playfair Display', serif;
+	margin: 10px;
+}
+
+.infocomojugar p{
+	font-size: 17px;
+	font-family: 'Playfair Display', serif;
+	margin: 10px;
+}
+
+
+.contenidocomojugar {
+	display: flex;
+	align-items: center;
+}
+  
+.infocomojugar {
+	text-align: center;
+	flex: 1;
+	padding-left: 20px;
+}
+
+.contenidocomojugar img {
+	width: 120px;
+}
+
+.fondocomojugar1 {
+	background-image: url(../imagenes/index/tierra.jpg);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fondocomojugar2 {
+	background-image: url(../imagenes/index/fondocueva.webp);
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fondocomojugar3 {
+	background-image: url(../imagenes/index/lushcaves.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+/*-------------------A CARGO DE MINECRAFT-----------------------*/
 
 .fondoacargo {
 	background-image: url(../imagenes/index/fondoend.webp);
@@ -149,10 +296,10 @@
 	font-family: 'Playfair Display', serif;
 }
 
-.empresa1, .empresa2 {
+/*.empresa1, .empresa2, .empresa3 {
 	display: inline-block;
-	width: 30%;
-	height: 300px;
+	width: 25%;
+	height: 250px;
 	margin: 20px 20px 0 0;
 	padding: 20px 20px;
 	box-sizing: border-box;
@@ -160,6 +307,27 @@
 	border-width: 2px;
 	border-style: solid;
 	border-radius: 20px;
+}*/
+
+.empresa1, .empresa2, .empresa3 {
+    display: inline-block;
+    width: 270px;
+    height: 270px;
+    margin: 20px 20px 0 0;
+    padding: 20px 20px;
+    box-sizing: border-box;
+    border-color: purple;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50%; /* Cambiado a 50% para hacer los contenedores circulares */
+}
+
+.empresa1:hover, .empresa2:hover, .empresa3:hover {
+    border-color: #6E48AA;
+}
+
+.empresa1:hover, .empresa2:hover, .empresa3:hover {
+	transform: rotate(3deg);
 }
 
 .empresa1 {
@@ -176,102 +344,23 @@
 	background-position: center; /* Centra la imagen */
 }
 
-/*------------------------------------------------------*/
-
-ul img {
-	width: 100px;
-	margin: 35px;
+.empresa3 {
+	background-image: url("../imagenes/index/logomicrosoft.jpg");
+	background-size: cover;
+	background-repeat: no-repeat; /* Asegura que la imagen no se repita */
+	background-position: center; /* Centra la imagen */
 }
 
-ul p {
-	font-weight: bold;
-}
-
-.temas {
-	margin: 30px;
-  	display: inline-block;
-}
-
-.centrar {
-	text-align: center;
-}
-
-/* Estilos generales del contenedor */
-.contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 800px;
-}
-
-.imagen {
-    flex: 0 0 auto; /* La imagen no crecerá, se mantiene a la izquierda */
-    margin-right: 20px; /* Espacio entre la imagen y el texto */
-}
-
-.imagen img {
-    max-width: 100%; /* La imagen se ajusta al ancho del contenedor */
-    height: auto;
-}
-
-/* Estilos para el contenido (texto) */
-.contenido {
-    flex: 1; /* El contenido ocupará el espacio restante */
-}
-
-.contenido h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-	font-family: 'Playfair Display', serif;
-}
-
-.contenido p {
-    font-size: 16px;
-    line-height: 1.5;
-	font-family: 'Playfair Display', serif;
-}
-
-.nolink {
-	text-decoration: none;
-	color: inherit;
-}
-
-.temas .tema {
-/*	display: inline-block;*/
-/*	text-align: center;*/
-	width: 900px;
-	/*vertical-align: top;*/
-	margin: 15px 0px;
-	padding: 20px 20px;
-	box-sizing: border-box;
-	border-color: #000000;
-	border-width: 2px;
-	border-style: solid;
-	border-radius: 20px;
-	background-color: aliceblue;
-}
-
-.temas .tema:hover {
-	border-color: #C78C19;
-}
-
-.temas .tema:hover h2 {
-	font-size: 40px;
-}
-
-.tipo {
-	font-size: 30px;
-	font-weight: bold;
-}
+/*------------ MAIN ----------------------*/
 
 main {
-	background-image: url("../imagenes/index/fondolargo.png");
+	background-color: white;
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
 }
 
-/*------------------------------------*/
+/*-------------FOOTER----------------*/
 
 footer {
 	background-image: url("../imagenes/index/fondofooter.png");
@@ -289,6 +378,6 @@ footer h1 {
 }
 
 footer img {
-	width: 100px;
+	width: 150px;
 	padding: 20px;
 }
