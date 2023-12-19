@@ -137,7 +137,7 @@
 }
 
 .botonpaginas:hover h1 {
-	font-size: 30px;
+	font-size: 25px;
 }
 
 .botonpaginas h1 {
@@ -159,8 +159,7 @@
 .botonpaginas img {
 	width: 150px;
 }
-  
-  
+
 
 /*-------------CERDO Y GHAST-----------------*/
 
@@ -183,6 +182,50 @@
 .ghast img {
 	width: 70px;
 }
+
+/*------------------- VIDEO -----------------------*/
+
+/* Estilos del contenedor principal */
+.contenedorvideo {
+    align-items: center;
+    justify-content: space-between;
+	text-align: center;
+
+	width: 70%;
+	height: 350px;
+    padding: 20px;
+	margin: 15px;
+    
+}
+
+.centrarvideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	background-image: url(../imagenes/index/tierra.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contenedorvideo h1 {
+    font-size: 28px;  
+	font-weight: bold;
+	font-family: 'Playfair Display', serif;
+	color: white;
+	padding: 20px;
+}
+
+
+.video iframe {
+    width: 50%;
+    height: 250px;
+	border: 2px solid #000000;
+    border-radius: 20px;
+    background-color: aliceblue;
+	padding: 1px;
+}
+
 
 /*------------------- TEMAS -----------------------*/
 
@@ -244,27 +287,11 @@
 }
 
 .fondocomojugar1 {
-	background-image: url(../imagenes/index/tierra.jpg);
-	background-position: bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.fondocomojugar2 {
 	background-image: url(../imagenes/index/fondocueva.webp);
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-.fondocomojugar3 {
-	background-image: url(../imagenes/index/lushcaves.jpg);
-	background-position: top;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-
 
 /*-------------------A CARGO DE MINECRAFT-----------------------*/
 
@@ -358,6 +385,20 @@ main {
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
+}
+
+/*-------------PORTAL AL END----------------*/
+
+.portalend {
+	text-align: center;
+	background-image: url(../imagenes/index/fondoendcity.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.portalend img {
+	width: 30%;
 }
 
 /*-------------FOOTER----------------*/
