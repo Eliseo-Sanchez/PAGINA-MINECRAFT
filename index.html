@@ -22,6 +22,8 @@
 		<img src="imagenes/index/ghast.webp">
 	</div>
 
+	<!---------------------- BOTÓN CREADORES ------------------>
+
 	<div class="creadores">
 		<a href="paginas/creadores.html"><input type="submit" value="CREADORES" class="boton"></a>
 	</div>
@@ -67,6 +69,8 @@
 		<hr>
 	</div>
 
+	<!---------------------- VIDEO HISTORIA ------------------>
+
 	<div class="centrarvideo">
 		<hr>
 		<div class="contenedorvideo">
@@ -93,6 +97,7 @@
 					</div>
 				</div>
 			</div>
+
 	
 			<div class="contenedor-central">
 				<div class="contenidocomojugar">
@@ -262,9 +267,81 @@
 
 	</main>
 
+	<!---------------------- PRUEBA CARRUSEL ------------------>
+	
+	<div class="centrarcarrusel">
+		<div class="contenedorcarrusel">
+			<h1>OTROS JUEGOS DE MINECRAFT</h1>
+			<div class="imgotrosjuegos">
+				<div class="otrojuego">
+					<a href="https://www.minecraft.net/es-es/about-dungeons"><img src="imagenes/index/minecraftdungeons.avif" alt="imagen1"></a>
+				</div>
+				<div class="otrojuego">
+					<a href="https://education.minecraft.net/es-es"><img src="imagenes/index/minecrafteducation.avif" alt=""></a>
+				</div>
+				<div class="otrojuego">
+					<a href="https://www.minecraft.net/es-es/about-legends"><img src="imagenes/index/minecraftlegends.avif" alt=""></a>
+				</div>
+				<div class="otrojuego">
+					<a href="https://www.minecraft.net/about-minecraft"><img src="imagenes/index/minecraftoriginal.avif" alt=""></a>
+				</div>
+				<div class="otrojuego">
+					<a href="https://www.minecraft.net/es-es/catalog"><img src="imagenes/index/minecraftmarketplace.avif" alt=""></a>
+				</div>
+				<div class="otrojuego">
+					<a href="https://www.minecraft.net/es-es/realms"><img src="imagenes/index/minecraftrealms.avif" alt=""></a>
+				</div>
+				
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		
+			<div class="elements">
+				<span class="quadrate" onclick="currentSlide(1)"></span>
+				<span class="quadrate" onclick="currentSlide(2)"></span>
+				<span class="quadrate" onclick="currentSlide(3)"></span>
+				<span class="quadrate" onclick="currentSlide(4)"></span>
+				<span class="quadrate" onclick="currentSlide(5)"></span>
+				<span class="quadrate" onclick="currentSlide(6)"></span>
+			</div>
+		</div>
+	</div>
+	
+
+    <script>
+		let slideIndex = 1;
+		showSlides(slideIndex)
+
+		function plusSlides(n){
+			showSlides(slideIndex += n)
+		}
+		function currentSlide(n){
+			showSlides(slideIndex = n)
+		}
+		function showSlides(n){
+			let i;
+			let slides = document.querySelectorAll(".otrojuego");
+			let quadrates = document.querySelectorAll(".quadrate"); 
+			if(n > slides.length) slideIndex = 1
+			if(n < 1) slideIndex = slides.length
+			for(i = 0; i < slides.length; i++){
+				slides[i].style.display = "none"
+			}
+			for(i = 0; i < quadrates.length;i++){
+				quadrates[i].className = quadrates[i].className.replace("active","")
+			}
+			slides[slideIndex-1].style.display = "block";
+			quadrates[slideIndex-1].className += " active";
+		}
+	</script>	  
+
+	<!----------------------PORTAL END ------------------>
+
 	<div class="portalend">
 		<img src="imagenes/index/portalend.jpg" alt="portalalend">
 	</div>
+
+	<!---------------------- EMPRESAS A CARGO ------------------>
 
 	<div class="fondoacargo">
 		<hr>
